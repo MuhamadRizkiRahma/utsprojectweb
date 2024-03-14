@@ -15,6 +15,12 @@
   </head>
   <body>
     
+  <?php
+      session_start();
+      if($_SESSION['status']!="login"){
+        header("location:login.php?msg=belum_login");
+      }
+      ?>
     <center>
     <div class="card bg-dark text-white">
   <img src="img/b.jpg" class="card-img" alt=100% width="150" height="190">
@@ -120,6 +126,7 @@
 </div><br>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#"><center>Copyleft@2023 - PT. Iotech Studio</center></a>
+      <a href="login.php"><button>LOGOUT</button></a>
       </nav>
       </div>
   </body>

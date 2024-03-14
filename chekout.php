@@ -33,7 +33,7 @@
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
   <button type="button" class="btn btn-light btn-lg btn-block"><a class="link" href="peminjaman.php">Back</button>
-  <button type="button" class="btn btn-dark btn-lg btn-block"><a class="link" href="berhasil.php">Chekout</button>
+  <button type="button" class="btn btn-dark btn-lg btn-block"><a class="link" href="pdone.php">Chekout</button>
     </form>
 </ul>
 </div>

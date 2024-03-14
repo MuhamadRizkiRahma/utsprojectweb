@@ -9,6 +9,13 @@
 
 </head>
 <body>
+
+<?php
+      session_start();
+      if($_SESSION['status']!="login"){
+        header("location:login.php?msg=belum_login");
+      }
+    ?>
 <ul>
 <div class="card bg-dark text-white">
   <img src="img/2075695.jpg" class="card-img" width="150" height="130">
@@ -16,14 +23,13 @@
         <div class="container"><br>
             <div class="row">
             <div class="col-xl-2">
-                <img src="img/smpl.png" width=50 heigth=100>
+                <p>Selamat datang member</p>
             </div>
             <div class="col-md-8">
                 <center>
                 <h3>Inventaris SMK Bakti Nusantara 666</h3>
                 </center>
             </div>
-            <a href="/" class="bn17">LOGOUT</a>
             </div>
         </div>
 </div>
@@ -96,7 +102,6 @@
           </div>
           <div class="col-md-7"><br>
               <h2>Tect style Bag Pack</h2>
-              <h3>Price :</h3> <h4>$50.00</h4><br>
               <i class="fa fa-star" aria-hidden="true"></i>
               <i class="fa fa-star" aria-hidden="true"></i>
               <i class="fa fa-star" aria-hidden="true"></i>
@@ -123,7 +128,7 @@
               <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
               <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i>
               <i class="fa fa-twitter fa-3x" aria-hidden="true"></i><br><br>
-              <button type="button" class="btn btn-dark btn-lg btn-block">Checkout</button>
+              <button type="button" class="btn btn-dark btn-lg btn-block"><a href="chekout.php">Checkout</a></button>
             <br><br>
           </div>
           </div>
@@ -160,7 +165,6 @@
           </div>
           <div class="col-md-7"><br>
               <h2>Tect style Bag Pack</h2>
-              <h3>Price :</h3> <h4>$50.00</h4><br>
               <i class="fa fa-star" aria-hidden="true"></i>
               <i class="fa fa-star" aria-hidden="true"></i>
               <i class="fa fa-star" aria-hidden="true"></i>
@@ -187,7 +191,7 @@
               <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
               <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i>
               <i class="fa fa-twitter fa-3x" aria-hidden="true"></i><br><br>
-              <button type="button" class="btn btn-dark btn-lg btn-block">Checkout</button>
+              <button type="button" class="btn btn-dark btn-lg btn-block"><a href="chekout.php">Checkout</a></button>
             <br><br>
           </div>
           </div>
@@ -224,7 +228,6 @@
           </div>
           <div class="col-md-7"><br>
               <h2>Tect style Bag Pack</h2>
-              <h3>Price :</h3> <h4>$50.00</h4><br>
               <i class="fa fa-star" aria-hidden="true"></i>
               <i class="fa fa-star" aria-hidden="true"></i>
               <i class="fa fa-star" aria-hidden="true"></i>
@@ -251,7 +254,7 @@
               <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
               <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i>
               <i class="fa fa-twitter fa-3x" aria-hidden="true"></i><br><br>
-              <button type="button" class="btn btn-dark btn-lg btn-block"><a class="link" href="chekout.php">Checkout</button>
+              <button type="button" class="btn btn-dark btn-lg btn-block"><a href="chekout.php">Checkout</a></button>
             <br><br>
           </div>
           </div>
@@ -263,6 +266,7 @@
       </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#"><center>Copyleft@2023 - PT. Iotech Studio</center></a>
+      <a href="login.php"><button>LOGOUT</button></a>
       </nav>
       </div>
     <!-- Optional JavaScript; choose one of the two! -->

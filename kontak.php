@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 <body>
+
+<?php
+      session_start();
+      if($_SESSION['status']!="login"){
+        header("location:login.php?msg=belum_login");
+      }
+    ?>
 <ul>
 <div class="card bg-dark text-white">
   <img src="img/2075695.jpg" class="card-img" width="150" height="130">
@@ -132,6 +139,7 @@
 </div><br>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#"><center>Copyleft@2023 - PT. Iotech Studio</center></a>
+      <a href="login.php"><button>LOGOUT</button></a>
       </nav>
       </div>
 </body>

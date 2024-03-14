@@ -11,6 +11,24 @@
     <title>Daftar Notes</title>
   </head>
   <body>
+  <div class="container">
+  <div class="card bg-dark text-white" width="150" height="200"><br>
+  <ul>
+            <div class="row">
+            <div class="col-md-3">
+                <p>Selamat datang member</p>
+            </div>
+            <div class="col-md-7">
+                <center>
+                <h3>Inventaris SMK Bakti Nusantara 666</h3>
+                </center>
+            </div>
+            <a href="login.php" class="bn17">LOGOUT</a><br><br>
+            </div>
+        </div>
+</ul>
+</div>
+</div>
     <?php
       session_start();
       if($_SESSION['status']!="login"){
@@ -19,6 +37,21 @@
         include("navbar.php");
       }
     ?>
+    <div class="d-flex justify-content-center">
+    <div class="container">
+      <div class="card bg-dark text-white">
+  <img src="img/blue-energy.jpg" class="card-img" alt=100% width="100" height="400">
+  <div class="card-img-overlay"><br>
+  <ul>
+    <center>
+    <h1>This site only can see By Admin</h1>
+    </center><br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptas nobis minima dignissimos molestias commodi recusandae temporibus atque debitis aspernatur id dolore possimus, qui distinctio adipisci exercitationem dolorem fuga quo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo odit repudiandae fugit soluta rem ipsa placeat architecto sequi nisi porro culpa dignissimos reiciendis deserunt dolorum ad, voluptas molestiae facere vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iste illum consequatur mollitia magni fuga tempora cupiditate, quisquam nemo voluptatum obcaecati ipsa asperiores voluptatem similique accusamus esse tenetur eos corrupti.</p>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div><br><br>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#"><center>Copyleft@2023 - PT. Iotech Studio</center></a>
       </nav>
